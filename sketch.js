@@ -29,10 +29,10 @@ function draw() {
 	//아래라인
 	noFill();
 	stroke(255);
-	ellipse(1000,0,3000,1000)
+	ellipse(1000,500,3000,1000)
 
 	//고양이
- 	image(solar,250,250,1000,500);
+ 	image(solar,750,250,500,500);
 
  	//스시
 	image(earth,500 + Math.cos(timing1*2*PI)*300-150,500 + Math.sin(timing1*2*PI)*300-150,300,300);
