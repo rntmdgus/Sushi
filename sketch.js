@@ -30,15 +30,15 @@ function draw() {
 
 	//발왼쪽 이동
 	drawleft(count1,0);
-	count1=count1+5;
-	if(count1>2000){
+	count1=count1+1;
+	if(count1>-2000){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
 	drawright(count2,0);
-	count2=count2+5;
-	if(count2<2000){
+	count2=count2+1;
+	if(count2>2000){
 	count2=0;
 	} 
 
