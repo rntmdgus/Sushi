@@ -28,13 +28,13 @@ function draw() {
 	var timing3 = (new Date()%duration3)/duration3;
 
 	//발
-	image(top,0,0,2000,1000);
+	image(top,0,0,2000,500);
 
 	//발왼쪽
-	image(left,0,0,2000,1000);
+	image(left,0,0,2000,500);
 
 	//발오른쪽
-	image(right,0,0,2000,1000);
+	image(right,0,0,2000,500);
 
 	//위라인
 	noFill();
