@@ -14,7 +14,7 @@ function draw() {
 
 	var duration1 = 35000;
 	var timing1 = (new Date()%duration1)/duration1;
-	var duration2 = 35000;
+	var duration2 = 35000+10000;
 	var timing2 = (new Date()%duration2)/duration2;
 
 	//위라인
@@ -22,17 +22,23 @@ function draw() {
 	stroke(255);
 	ellipse(1000,1000,4500,1000)
 
- 	//위스시
+ 	//위스시1
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-250,1000 + Math.sin(timing1*2*PI)*500-250,500,500);
 
+ 	//위스시2
+	image(earth,1000 + Math.cos(timing2*2*PI)*2250-250,1000 + Math.sin(timing2*2*PI)*500-250,500,500);
 
 	//아래라인
 	noFill();
 	stroke(255);
 	ellipse(1000,200,4500,1500)
 
-	//아래
+	//아래스시1
+	image(earth,1000 + Math.cos(timing1*2*PI)*2250-400,200 + Math.sin(timing1*2*PI)*750-400,800,800);
+
+	//아래스시1
 	image(earth,1000 + Math.cos(timing2*2*PI)*2250-400,200 + Math.sin(timing2*2*PI)*750-400,800,800);
+
 
 	//고양이(태양)
  	image(solar,750,400,500,500);
