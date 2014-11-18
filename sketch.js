@@ -19,12 +19,12 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1000,3000,1000)
+	ellipse(1000,1000,5000,1000)
 
 	//아래라인
 	noFill();
 	stroke(255);
-	ellipse(1000,200,4500,1500)
+	ellipse(1000,200,4000,1500)
 
 	//고양이(태양)
  	image(solar,750,400,500,500);
