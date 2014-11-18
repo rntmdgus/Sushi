@@ -1,4 +1,4 @@
-var bg, sushi1, chopsticks, left, right, solar;
+var bg, sushi1, chopsticks, left, right, count1, count2, solar;
 
 function setup() {
 
@@ -25,12 +25,22 @@ function draw() {
 	var timing2 = (new Date()%duration2)/duration2;
 	var duration3 = 50000;
 	var timing3 = (new Date()%duration3)/duration3;
+	var count1 = 30000;
+	var count2 = 30000;
 
-	//발왼쪽
-	image(left,0,0,2000,1000);
+	//발왼쪽 이동
+	drawleft(count1,0);
+	count1=count1+5;
+	if(count1>2000){
+	count1=0;
+	} 
 
-	//발오른쪽
-	image(right,0,0,2000,1000);
+	//발오른쪽 이동
+	drawright(count2,0);
+	count2=count2+5;
+	if(count2<2000){
+	count2=0;
+	} 
 
 	//위라인
 	noFill();
@@ -57,4 +67,14 @@ function draw() {
 	//젓가락
 	image(chopsticks,mouseX,mouseY,700,700)
 
+}
+
+function drawleft(x,y){
+	//발왼쪽
+	image(left,0,0,2000,1000);
+}
+
+function drawright(x,y){
+	//발오른쪽
+	image(right,0,0,2000,1000);
 }
