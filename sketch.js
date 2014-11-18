@@ -12,11 +12,11 @@ function draw() {
 
 	background(bg);
 
-	var duration1 = 35000;
+	var duration1 = 50000;
 	var timing1 = (new Date()%duration1)/duration1;
-	var duration2 = 35000;
+	var duration2 = 50000;
 	var timing2 = (new Date()%duration2)/duration2;
-	var duration3 = 35000;
+	var duration3 = 50000;
 	var timing3 = (new Date()%duration3)/duration3;
 
 
