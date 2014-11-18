@@ -25,20 +25,18 @@ function draw() {
 	var timing2 = (new Date()%duration2)/duration2;
 	var duration3 = 50000;
 	var timing3 = (new Date()%duration3)/duration3;
-	var count1 = 30000;
-	var count2 = 30000;
+	var count1 = 1000;
+	var count2 = 1000;
 
 	//발왼쪽 이동
 	drawleft(count1,0);
-	count1=count1+1;
-	if(count1>-2000){
+	if(count1>-3000){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
 	drawright(count2,0);
-	count2=count2+1;
-	if(count2>2000){
+	if(count2>3000){
 	count2=0;
 	} 
 
