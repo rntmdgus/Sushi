@@ -25,16 +25,16 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1300,4500,1000)
+	ellipse(1000,1400,4500,1500)
 
  	//위스시1
-	image(earth,1000 + Math.cos(timing1*2*PI)*2250-200,1300 + Math.sin(timing1*2*PI)*500-200,400,400);
+	image(earth,1000 + Math.cos(timing1*2*PI)*2250-200,1400 + Math.sin(timing1*2*PI)*750-200,400,400);
 
  	//위스시2
-	image(earth,1000 + Math.cos(timing2*2*PI)*2250-200,1300 + Math.sin(timing2*2*PI)*500-200,400,400);
+	image(earth,1000 + Math.cos(timing2*2*PI)*2250-200,1400 + Math.sin(timing2*2*PI)*750-200,400,400);
 
  	//위스시2
-	image(earth,1000 + Math.cos(timing3*2*PI)*2250-200,1300 + Math.sin(timing3*2*PI)*500-200,400,400);
+	image(earth,1000 + Math.cos(timing3*2*PI)*2250-200,1400 + Math.sin(timing3*2*PI)*750-200,400,400);
 	
 
 	//고양이(태양)
