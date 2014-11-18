@@ -12,14 +12,9 @@ function draw() {
 
 	background(bg);
 
-	var duration1 = 15000;
+	var duration1 = 30000;
 	var timing1 = (new Date()%duration1)/duration1;
-	var duration2 = 5000;
-	var timing2 = (new Date()%duration2)/duration2;
-	var duration3 = 4000;
-	var timing3 = (new Date()%duration3)/duration3;
-	var duration4 = 3000;
-	var timing4 = (new Date()%duration4)/duration4;
+
 
 	//위라인
 	noFill();
@@ -32,8 +27,8 @@ function draw() {
 	ellipse(1000,200,4000,1500)
 
 	//고양이
- 	image(solar,750,250,500,500);
+ 	image(solar,750,500,700,1200);
 
  	//스시
-	image(earth,1000 + Math.cos(timing1*2*PI)*1500-150,1000 + Math.sin(timing1*2*PI)*500-150,300,300);
+	image(earth,1000 + Math.cos(timing1*2*PI)*1500-150,1000 + Math.sin(timing1*2*PI)*500-150,500,500);
 }
