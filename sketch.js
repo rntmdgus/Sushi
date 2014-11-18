@@ -42,8 +42,8 @@ function draw() {
 	//아래라인
 	noFill();
 	stroke(255);
-	ellipse(1000,200,4500,1500)
+	ellipse(1000,150,4500,1500)
 
 	//아래스시1
-	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,200 + Math.sin(timing1*2*PI)*750-300,600,600);
+	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,150 + Math.sin(timing1*2*PI)*750-300,600,600);
 }
