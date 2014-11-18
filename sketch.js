@@ -29,10 +29,10 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1300,4500,1500)
+	ellipse(1000,1300,4200,1500)
 
  	//위스시1-새우
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2250-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
+	image(sushi1,1000 + Math.cos(timing1*2*PI)*2100-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
 
 
 	//고양이(태양)
