@@ -51,7 +51,7 @@ function draw() {
  	//위스시1-새우접시
 	image(dishw,1000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시1-새우
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-69,272,158);
+	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-59,272,158);
 
 
 	//고양이1
