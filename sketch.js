@@ -28,6 +28,19 @@ function draw() {
 	var count1 = 1000;
 	var count2 = 1000;
 
+	//발왼쪽 이동
+	drawleft(count1,0);
+	count1=count1;
+	if(count1>-3000){
+	count1=0;
+	} 
+
+	//발오른쪽 이동
+	drawright(count2,0);
+	count2=count2;
+	if(count2>3000){
+	count2=0;
+	} 
 
 	//위라인
 	noFill();
