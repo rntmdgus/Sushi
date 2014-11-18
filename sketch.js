@@ -27,12 +27,12 @@ function draw() {
 	stroke(255);
 	ellipse(1000,200,4000,1500)
 
-	//고양이(태양)
- 	image(solar,750,400,500,500);
-
  	//스시
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-150,1000 + Math.sin(timing1*2*PI)*500-150,300,300);
 
 	//스시2
 	image(earth,1000 + Math.cos(timing2+5000*2*PI)*2250-150,1000 + Math.sin(timing2+5000*2*PI)*500-150,300,300);
+
+	//고양이(태양)
+ 	image(solar,750,400,500,500);
 }
