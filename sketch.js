@@ -32,7 +32,7 @@ function draw() {
 	ellipse(1000,1350,4500,1500)
 
  	//위스시1-새우
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2250-150,1350 + Math.sin(timing1*2*PI)*750-95,300,190);
+	image(sushi1,1000 + Math.cos(timing1*2*PI)*2250-150,1350 + Math.sin(timing1*2*PI)*750-70,300,190);
 
 
 	//고양이(태양)
