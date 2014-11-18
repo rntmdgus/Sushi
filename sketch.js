@@ -28,19 +28,6 @@ function draw() {
 	var count1 = 1000;
 	var count2 = 1000;
 
-	//발왼쪽 이동
-	drawleft(count1,0);
-	count1=count1;
-	if(count1>-3000){
-	count1=0;
-	} 
-
-	//발오른쪽 이동
-	drawright(count2,0);
-	count2=count2;
-	if(count2>3000){
-	count2=0;
-	} 
 
 	//위라인
 	noFill();
@@ -63,7 +50,8 @@ function draw() {
 	//아래스시1
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,120 + Math.sin(timing1*2*PI)*750-300,600,600);
 
-	chopsticks();
+	//젓가락
+	image(chopsticks,mouseX,mouseY,700,700)
 
 }
 
@@ -75,9 +63,4 @@ function drawleft(x,y){
 function drawright(x,y){
 	//발오른쪽
 	image(right,0,0,2000,1000);
-}
-
-function chopsticks(mouseX,mouseY){
-	//젓가락
-	image(chopsticks,mouseX,mouseY,700,700)
 }
