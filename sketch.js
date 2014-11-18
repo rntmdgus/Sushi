@@ -23,16 +23,16 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1000,4500,1000)
+	ellipse(1000,1000,4500,1500)
 
  	//위스시1
-	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,1000 + Math.sin(timing1*2*PI)*500-200,600,600);
+	image(earth,1000 + Math.cos(timing1*2*PI)*2250-200,1000 + Math.sin(timing1*2*PI)*500-300,400,400);
 
  	//위스시2
-	image(earth,1000 + Math.cos(timing2*2*PI)*2250-300,1000 + Math.sin(timing2*2*PI)*500-200,600,600);
+	image(earth,1000 + Math.cos(timing2*2*PI)*2250-200,1000 + Math.sin(timing2*2*PI)*500-300,400,400);
 
  	//위스시2
-	image(earth,1000 + Math.cos(timing3*2*PI)*2250-300,1000 + Math.sin(timing3*2*PI)*500-200,600,600);
+	image(earth,1000 + Math.cos(timing3*2*PI)*2250-200,1000 + Math.sin(timing3*2*PI)*500-300,400,400);
 
 
 	//아래라인
@@ -41,13 +41,13 @@ function draw() {
 	ellipse(1000,200,4500,1500)
 
 	//아래스시1
-	image(earth,1000 + Math.cos(timing1*2*PI)*2250-400,200 + Math.sin(timing1*2*PI)*750-300,800,800);
+	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,200 + Math.sin(timing1*2*PI)*750-400,600,600);
 
 	//아래스시1
-	image(earth,1000 + Math.cos(timing2*2*PI)*2250-400,200 + Math.sin(timing2*2*PI)*750-300,800,800);
+	image(earth,1000 + Math.cos(timing2*2*PI)*2250-300,200 + Math.sin(timing2*2*PI)*750-400,600,600);
 
 	//아래스시1
-	image(earth,1000 + Math.cos(timing3*2*PI)*2250-400,200 + Math.sin(timing3*2*PI)*750-300,800,800);
+	image(earth,1000 + Math.cos(timing3*2*PI)*2250-300,200 + Math.sin(timing3*2*PI)*750-400,600,600);
 
 
 	//고양이(태양)
