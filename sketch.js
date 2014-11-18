@@ -19,7 +19,7 @@ function draw() {
 	background(bg);
 	noCursor();
 
-	image(chopsticks,mouseX,mouseY,500,500)
+
 
 	var duration1 = 50000;
 	var timing1 = (new Date()%duration1)/duration1;
@@ -50,4 +50,9 @@ function draw() {
 
 	//아래스시1
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,120 + Math.sin(timing1*2*PI)*750-300,600,600);
+
+
+	//젓가락
+	image(chopsticks,mouseX,mouseY,1000,1000)
+
 }
