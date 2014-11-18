@@ -1,4 +1,4 @@
-var bg, sushi1, chopsticks, left, right, count1, count2, solar;
+var bg, sushi1, chopsticks, left, right, count1, count2, cat1, cat2;
 
 function setup() {
 
@@ -9,6 +9,8 @@ function setup() {
     sushi1 = loadImage("sushi1.png")
     left = loadImage("left.png")
     right = loadImage("right.png")
+    cat1 = loadImage("cat1.png")
+    cat2 = loadImage("cat2.png")
 
 	solar = loadImage("sun.png");
 }
@@ -51,8 +53,11 @@ function draw() {
 	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
 
 
-	//고양이(태양)
- 	image(solar,750,400,500,500);
+	//고양이1
+ 	image(cat1,0,0,2000,1000);
+
+ 	//고양이2
+ 	image(cat2,0,0,2000,1000);	
 
 
 	//아래라인
