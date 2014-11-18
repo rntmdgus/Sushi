@@ -1,4 +1,4 @@
-var bg, sushi1, chopsticks, earth, moon, solar;
+var bg, sushi1, chopsticks, top, left, right, solar;
 
 function setup() {
 
@@ -7,9 +7,10 @@ function setup() {
     bg = loadImage("bg.png");
     chopsticks = loadImage("chopsticks.png")
     sushi1 = loadImage("sushi1.png")
+    top = loadImage("top.png")
+    left = loadImage("left.png")
+    right = loadImage("right.png")
 
-	earth = loadImage("earth.png");
-	moon = loadImage("moon.png");
 	solar = loadImage("sun.png");
 }
 
@@ -19,8 +20,6 @@ function draw() {
 	background(bg);
 	noCursor();
 
-
-
 	var duration1 = 50000;
 	var timing1 = (new Date()%duration1)/duration1;
 	var duration2 = 50000;
@@ -28,7 +27,14 @@ function draw() {
 	var duration3 = 50000;
 	var timing3 = (new Date()%duration3)/duration3;
 
+	//발
+	image(top,0,0,2000,1000);
 
+	//발왼쪽
+	image(left,0,0,2000,1000);
+
+	//발오른쪽
+	image(right,0,0,2000,1000);
 
 	//위라인
 	noFill();
