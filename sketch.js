@@ -27,8 +27,8 @@ function draw() {
 	ellipse(1000,200,4000,1500)
 
 	//고양이
- 	image(solar,750,500,700,1200);
+ 	image(solar,750,250,500,500);
 
  	//스시
-	image(earth,1000 + Math.cos(timing1*2*PI)*1500-150,1000 + Math.sin(timing1*2*PI)*500-150,500,500);
+	image(earth,1000 + Math.cos(timing1*2*PI)*1500-150,1000 + Math.sin(timing1*2*PI)*500-150,300,300);
 }
