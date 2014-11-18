@@ -21,11 +21,15 @@ function draw() {
 	var duration4 = 3000;
 	var timing4 = (new Date()%duration4)/duration4;
 
-	//지구라인
+	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1300,3000,1000)
+	ellipse(1000,800,3000,1000)
 
+	//아래라인
+	noFill();
+	stroke(255);
+	ellipse(-1000,800,3000,1000)
 
 	//고양이
  	image(solar,250,250,500,500);
