@@ -63,9 +63,7 @@ function draw() {
 	//아래스시1
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,120 + Math.sin(timing1*2*PI)*750-300,600,600);
 
-
-	//젓가락
-	image(chopsticks,mouseX,mouseY,700,700)
+	chopsticks();
 
 }
 
@@ -77,4 +75,9 @@ function drawleft(x,y){
 function drawright(x,y){
 	//발오른쪽
 	image(right,0,0,2000,1000);
+}
+
+function chopsticks(mouseX,mouseY){
+	//젓가락
+	image(chopsticks,mouseX,mouseY,700,700)
 }
