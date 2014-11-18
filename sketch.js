@@ -11,8 +11,6 @@ function setup() {
     right = loadImage("right.png")
     cat1 = loadImage("cat1.png")
     cat2 = loadImage("cat2.png")
-
-	solar = loadImage("sun.png");
 }
 
 
