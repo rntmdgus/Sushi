@@ -20,6 +20,7 @@ function draw() {
 	var timing3 = (new Date()%duration3)/duration3;
 
 
+
 	//위라인
 	noFill();
 	stroke(255);
@@ -33,6 +34,10 @@ function draw() {
 
  	//위스시2
 	image(earth,1000 + Math.cos(timing3*2*PI)*2250-200,1300 + Math.sin(timing3*2*PI)*750-300,400,400);
+	
+
+	//고양이(태양)
+ 	image(solar,750,400,500,500);
 
 
 	//아래라인
@@ -50,6 +55,5 @@ function draw() {
 	image(earth,1000 + Math.cos(timing3*2*PI)*2250-300,200 + Math.sin(timing3*2*PI)*750-400,600,600);
 
 
-	//고양이(태양)
- 	image(solar,750,400,500,500);
+
 }
