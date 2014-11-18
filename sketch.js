@@ -1,4 +1,4 @@
-var bg, sushi1, chopsticks, left, right, count1, count2, cat1, cat2;
+var bg, chopsticks, left, right, count1, count2, cat1, cat2 sushi1, dishw;
 
 function setup() {
 
@@ -7,6 +7,7 @@ function setup() {
     bg = loadImage("bg.png");
     chopsticks = loadImage("chopsticks.png")
     sushi1 = loadImage("sushi1.png")
+    dishw = loadImage("dishw.png")
     left = loadImage("left.png")
     right = loadImage("right.png")
     cat1 = loadImage("cat1.png")
@@ -46,7 +47,9 @@ function draw() {
 	noFill();
 	stroke(255);
 	ellipse(1000,1300,4000,1500)
-
+	
+ 	//위스시1-새우접시
+	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
  	//위스시1-새우
 	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
 
