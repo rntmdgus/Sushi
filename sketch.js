@@ -1,4 +1,4 @@
-var bg, chopsticks, left, right, count1, count2, cat1, cat2 sushi1, dishw;
+var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, dishw;
 
 function setup() {
 
