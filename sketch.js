@@ -24,7 +24,7 @@ function draw() {
 	//지구라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1000,1000,1000)
+	ellipse(1000,1300,3000,1000)
 
 
 	//고양이
