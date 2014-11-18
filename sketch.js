@@ -53,6 +53,6 @@ function draw() {
 
 
 	//젓가락
-	image(chopsticks,mouseX,mouseY,1000,1000)
+	image(chopsticks,mouseX,mouseY,700,700)
 
 }
