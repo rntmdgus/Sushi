@@ -1,10 +1,11 @@
-var bg, sushi1, earth, moon, solar;
+var bg, sushi1, chopsticks, earth, moon, solar;
 
 function setup() {
 
     createCanvas(2000, 1000);
 
     bg = loadImage("bg.png");
+    chopsticks = loadImage("chopsticks.png")
     sushi1 = loadImage("sushi1.png")
 
 	earth = loadImage("earth.png");
@@ -16,6 +17,9 @@ function setup() {
 function draw() {
 
 	background(bg);
+	noCursor();
+
+	image(chopsticks,mouseX,mouseY,500,500)
 
 	var duration1 = 50000;
 	var timing1 = (new Date()%duration1)/duration1;
@@ -29,10 +33,10 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,1320,4000,1500)
+	ellipse(1000,1300,4000,1500)
 
  	//위스시1-새우
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1320 + Math.sin(timing1*2*PI)*750-95,300,190);
+	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
 
 
 	//고양이(태양)
