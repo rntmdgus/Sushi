@@ -47,9 +47,9 @@ function draw() {
 	noFill();
 	stroke(255);
 	ellipse(1000,1300,4000,1500)
-	
+
  	//위스시1-새우접시
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
+	image(dishw,1000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시1-새우
 	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-150,1300 + Math.sin(timing1*2*PI)*750-95,300,190);
 
