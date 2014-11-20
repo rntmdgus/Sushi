@@ -81,7 +81,7 @@ function draw() {
 	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,730,2300,300);
+	ellipse(1000,730,2100,300);
 
 
 	//젓가락
