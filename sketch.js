@@ -1,6 +1,6 @@
 var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, sushi2, sushi3, dishw, dishy, dishr, dishb;
-
 var countCat;
+
 function setup() {
 
     createCanvas(2000, 1000);
@@ -59,18 +59,18 @@ function draw() {
 
 	if(50*sin(t*2*PI)<0){
 		//위
-		image(sushi1,1000+cos(t*2*PI)*2000,200+50*sin(t*2*PI),30,30);
+		image(sushi1,1000+cos(t*2*PI)*2000,100+50*sin(t*2*PI),272,158);
 	}
 	if(50*sin(t*2*PI+PI/3)<0){
-		image(sushi2,+cos(t*2*PI+PI/3)*2000,200+50*sin(t*2*PI+PI/3),30,30);
+		image(sushi2,+cos(t*2*PI+PI/3)*2000,100+50*sin(t*2*PI+PI/3),272,158);
 		
 	}
 
 
-	if(countCat <50){
+	if(countCat < 50){
 	//고양이1
  	image(cat1,0,0,2000,1000);
-	} else if(countCat <100){
+	} else if(countCat < 100){
  	//고양이2
  	image(cat2,0,0,2000,1000);	
 	} else{
@@ -82,10 +82,10 @@ function draw() {
 
 	if(50*sin(t*2*PI)>=0){
 		//위
-		image(sushi1,1000+cos(t*2*PI)*2000,200+50*sin(t*2*PI),40,40);
+		image(sushi1,1000+cos(t*2*PI)*2000,100+50*sin(t*2*PI),302,188);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi2,+cos(t*2*PI+PI/3)*2000,200+50*sin(t*2*PI+PI/3),40,40);
+		image(sushi2,+cos(t*2*PI+PI/3)*2000,100+50*sin(t*2*PI+PI/3),302,188);
 		
 	}
 
