@@ -60,14 +60,14 @@ function draw() {
 	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
  	//위스시2-참치접시y
-	image(dishy,1500 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
+	image(dishy,1000 + 500 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시2-참치
-	image(sushi2,1500 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
+	image(sushi2,1000 + 500 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
 	//위스시3-소고기접시r
-	image(dishw,2000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
+	image(dishw,1000 + 1000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시3-소고기
-	image(sushi1,2000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
+	image(sushi1,1000 + 1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
 
 	//고양이1
