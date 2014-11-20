@@ -53,10 +53,10 @@ function draw() {
 
 	if(50*sin(t*2*PI)<0){
 		//위
-		image(sushi1,1000+cos(t*2*PI)*2000,100+50*sin(t*2*PI),272,158);
+		image(sushi1,1000+cos(t*2*PI)*2000,1000+50*sin(t*2*PI),272,158);
 	}
 	if(50*sin(t*2*PI+PI/3)<0){
-		image(sushi2,+cos(t*2*PI+PI/3)*2000,100+50*sin(t*2*PI+PI/3),272,158);
+		image(sushi2,+cos(t*2*PI+PI/3)*2000,1000+50*sin(t*2*PI+PI/3),272,158);
 		
 	}
 
@@ -76,10 +76,10 @@ function draw() {
 
 	if(50*sin(t*2*PI)>=0){
 		//위
-		image(sushi1,1000+cos(t*2*PI)*2000,100+50*sin(t*2*PI),302,188);
+		image(sushi1,1000+cos(t*2*PI)*2000,1000+50*sin(t*2*PI),302,188);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi2,+cos(t*2*PI+PI/3)*2000,100+50*sin(t*2*PI+PI/3),302,188);
+		image(sushi2,+cos(t*2*PI+PI/3)*2000,1000+50*sin(t*2*PI+PI/3),302,188);
 		
 	}
 
