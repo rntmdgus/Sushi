@@ -1,4 +1,4 @@
-var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, sushi2, sushi3, dishw, dishy, dishr, dishb;
+var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, sushi2, sushi3, sushi4, dishw, dishy, dishr, dishb;
 var countCat;
 
 function setup() {
@@ -10,6 +10,7 @@ function setup() {
     sushi1 = loadImage("sushi1.png");
     sushi2 = loadImage("sushi2.png");
     sushi3 = loadImage("sushi3.png");
+    sushi4 = loadImage("sushi4.png");
     dishw = loadImage("dishw.png");
     dishy = loadImage("dishy.png");
     dishr = loadImage("dishr.png");
@@ -49,16 +50,16 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)<0){
-		image(sushi1,1000+cos(t*2*PI)*1050,580+150*sin(t*2*PI),272,158);
+		image(sushi1,1000+cos(t*2*PI)*1050,730+150*sin(t*2*PI),272,158);
 	}
 	if(50*sin(t*2*PI+PI/6)<0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,580+150*sin(t*2*PI+PI/6),272,158);	
+		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,730+150*sin(t*2*PI+PI/6),272,158);	
 	}
 	if(50*sin(t*2*PI+PI/3)<0){
-		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,580+150*sin(t*2*PI+PI/3),272,158);	
+		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,730+150*sin(t*2*PI+PI/3),272,158);	
 	}
 	if(50*sin(t*2*PI+PI/2)<0){
-		image(sushi3,1000+cos(t*2*PI+PI/2)*1050,580+150*sin(t*2*PI+PI/2),272,158);	
+		image(sushi3,1000+cos(t*2*PI+PI/2)*1050,730+150*sin(t*2*PI+PI/2),272,158);	
 	}
 
 
@@ -76,16 +77,16 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)>=0){
-		image(sushi1,1000+cos(t*2*PI)*1050,580+150*sin(t*2*PI),462,268);
+		image(sushi1,1000+cos(t*2*PI)*1050,730+150*sin(t*2*PI),462,268);
 	}
 	if(50*sin(t*2*PI+PI/6)>=0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,580+150*sin(t*2*PI+PI/6),462,268);
+		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,730+150*sin(t*2*PI+PI/6),462,268);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,580+150*sin(t*2*PI+PI/3),462,268);	
+		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,730+150*sin(t*2*PI+PI/3),462,268);	
 	}
 	if(50*sin(t*2*PI+PI/2)>=0){
-		image(sushi4,1000+cos(t*2*PI+PI/2)*1050,580+150*sin(t*2*PI+PI/2),462,268);
+		image(sushi4,1000+cos(t*2*PI+PI/2)*1050,730+150*sin(t*2*PI+PI/2),462,268);
 		
 	}
 
