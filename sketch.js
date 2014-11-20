@@ -56,16 +56,16 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)<0){
-		image(sushi1,1000+cos(t*2*PI)*1050-smallSizeW/2,730+150*sin(t*2*PI)-smallSizeH/2,smallSizeW,smallSizeH);
+		image(sushi1,1000+cos(t*2*PI)*1200-smallSizeW/2,730+150*sin(t*2*PI)-smallSizeH/2,smallSizeW,smallSizeH);
 	}
 	if(50*sin(t*2*PI+PI/6)<0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1050-smallSizeW/2,730+150*sin(t*2*PI+PI/6)-smallSizeH/2,smallSizeW,smallSizeH);	
+		image(sushi2,1000+cos(t*2*PI+PI/6)*1200-smallSizeW/2,730+150*sin(t*2*PI+PI/6)-smallSizeH/2,smallSizeW,smallSizeH);	
 	}
 	if(50*sin(t*2*PI+PI/3)<0){
-		image(sushi3,1000+cos(t*2*PI+PI/3)*1050-smallSizeW/2,730+150*sin(t*2*PI+PI/3)-smallSizeH/2,smallSizeW,smallSizeH);	
+		image(sushi3,1000+cos(t*2*PI+PI/3)*1200-smallSizeW/2,730+150*sin(t*2*PI+PI/3)-smallSizeH/2,smallSizeW,smallSizeH);	
 	}
 	if(50*sin(t*2*PI+PI/2)<0){
-		image(sushi4,1000+cos(t*2*PI+PI/2)*1050-smallSizeW/2,730+150*sin(t*2*PI+PI/2)-smallSizeH/2,smallSizeW,smallSizeH);	
+		image(sushi4,1000+cos(t*2*PI+PI/2)*1200-smallSizeW/2,730+150*sin(t*2*PI+PI/2)-smallSizeH/2,smallSizeW,smallSizeH);	
 	}
 
 
@@ -83,16 +83,16 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)>=0){
-		image(sushi1,1000+cos(t*2*PI)*1050-bigSizeW/2,730+150*sin(t*2*PI)-bigSizeH/2,bigSizeW,bigSizeH);
+		image(sushi1,1000+cos(t*2*PI)*1200-bigSizeW/2,730+150*sin(t*2*PI)-bigSizeH/2,bigSizeW,bigSizeH);
 	}
 	if(50*sin(t*2*PI+PI/6)>=0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1050-bigSizeW/2,730+150*sin(t*2*PI+PI/6)-bigSizeH/2,bigSizeW,bigSizeH);
+		image(sushi2,1000+cos(t*2*PI+PI/6)*1200-bigSizeW/2,730+150*sin(t*2*PI+PI/6)-bigSizeH/2,bigSizeW,bigSizeH);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi3,1000+cos(t*2*PI+PI/3)*1050-bigSizeW/2,730+150*sin(t*2*PI+PI/3)-bigSizeH/2,bigSizeW,bigSizeH);	
+		image(sushi3,1000+cos(t*2*PI+PI/3)*1200-bigSizeW/2,730+150*sin(t*2*PI+PI/3)-bigSizeH/2,bigSizeW,bigSizeH);	
 	}
 	if(50*sin(t*2*PI+PI/2)>=0){
-		image(sushi4,1000+cos(t*2*PI+PI/2)*1050-bigSizeW/2,730+150*sin(t*2*PI+PI/2)-bigSizeH/2,bigSizeW,bigSizeH);
+		image(sushi4,1000+cos(t*2*PI+PI/2)*1200-bigSizeW/2,730+150*sin(t*2*PI+PI/2)-bigSizeH/2,bigSizeW,bigSizeH);
 		
 	}
 
