@@ -105,6 +105,7 @@ function draw() {
 
 	//젓가락
 	image(chopsticks,mouseX-250,mouseY-20,500,500);
+	console.log(dist(sushiX[0],sushiY[0],mouseX,mouseY)+','+dist(sushiX[1],sushiY[1],mouseX,mouseY)+','+dist(sushiX[2],sushiY[2],mouseX,mouseY)+','+dist(sushiX[3],sushiY[3],mouseX,mouseY));
 
 }
 
