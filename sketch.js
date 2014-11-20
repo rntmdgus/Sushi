@@ -8,6 +8,8 @@ var sushiX=[];
 var sushiY=[];
 var checkPick=[];
 var sushiImg=[];
+var sushiCount=[];
+
 function setup() {
 
     createCanvas(2000, 1000);
@@ -34,6 +36,7 @@ function setup() {
 	countCat =0;
 	for(var i = 0 ; i <4 ; i++){
 		checkPick[i]=false;
+		sushiCount[i]=0;
 	}
 }
 
@@ -68,6 +71,7 @@ function draw() {
 		if(50*sin(t*2*PI+PI/6*i)<0){
 			if(!checkPick[i]){
 				image(sushiImg[i],sushiX[i]-smallSizeW/2,sushiY[i]-smallSizeH/2,smallSizeW,smallSizeH);
+
 			}
 		}
 	}
@@ -106,6 +110,15 @@ function draw() {
 	//젓가락
 	image(chopsticks,mouseX-250,mouseY-20,500,500);
 
+	for(var i = 0 ; i < 4 ; i++){
+		if(checkPick[i]){
+			sushiCount[i]+=5;
+			if(sushiCount[i] > 100){
+				sushiCount[i] = 0;
+				checkPick[i] = false;
+			}
+		}
+	}
 }
 
 function dist(x1,y1,x2,y2){
@@ -118,5 +131,4 @@ function mouseClicked(){
 			checkPick[i]=true;
 		}
 	}
-
 }
