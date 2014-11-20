@@ -12,8 +12,10 @@ function setup() {
     right = loadImage("right.png");
     cat1 = loadImage("cat1.png");
     cat2 = loadImage("cat2.png");
-}
 
+	count1 = 0;
+	count2 = 0;
+}
 
 function draw() {
 
@@ -26,20 +28,19 @@ function draw() {
 	var timing2 = (new Date()%duration2)/duration2;
 	var duration3 = 50000;
 	var timing3 = (new Date()%duration3)/duration3;
-	var count1 = 1000;
-	var count2 = 1000;
+
 
 	//발왼쪽 이동
-	drawleft(count1,0);
-	count1=count1;
-	if(count1>-3000){
+	image(drawleft,0,count1);
+	count1=count1+2;
+	if(count1>-300){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
-	drawright(count2,0);
-	count2=count2;
-	if(count2>3000){
+	image(drawright,0,count2);
+	count2=count2+2;
+	if(count2>300){
 	count2=0;
 	} 
 
@@ -72,14 +73,4 @@ function draw() {
 	//젓가락
 	image(chopsticks,mouseX,mouseY,700,700);
 
-}
-
-function drawleft(x,y){
-	//발왼쪽
-	image(left,0,0,2000,1000);
-}
-
-function drawright(x,y){
-	//발오른쪽
-	image(right,0,0,2000,1000);
 }
