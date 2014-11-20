@@ -37,14 +37,14 @@ function draw() {
 
 	//발왼쪽 이동
 	image(left,count1,0);
-	count1=count1+30;
+	count1=count1+20;
 	if(count1>-2000){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
 	image(right,count2,0);
-	count2=count2+30;
+	count2=count2+20;
 	if(count2>2000){
 	count2=0;
 	} 
@@ -60,14 +60,14 @@ function draw() {
 	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
  	//위스시2-참치접시y
-	image(dishy,1000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
+	image(dishy,1200 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시2-참치
-	image(sushi2,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
+	image(sushi2,1200 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
 	//위스시3-소고기접시r
-	image(dishw,1000 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
+	image(dishw,1400 + Math.cos(timing1*2*PI)*2000-250,1300 + Math.sin(timing1*2*PI)*750-100,500,200);
  	//위스시3-소고기
-	image(sushi1,1000 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
+	image(sushi1,1400 + Math.cos(timing1*2*PI)*2000-136,1300 + Math.sin(timing1*2*PI)*750-99,272,158);
 
 
 	//고양이1
@@ -86,10 +86,6 @@ function draw() {
 	image(earth,1000 + Math.cos(timing1*2*PI)*2250-300,120 + Math.sin(timing1*2*PI)*750-300,600,600);
 
 	//젓가락
-	draw1
-
-}
-
-function draw1(){
 	image(chopsticks,mouseX,mouseY,700,700);
+
 }
