@@ -31,14 +31,14 @@ function draw() {
 
 
 	//발왼쪽 이동
-	image(left,0,count1);
+	image(left,count1,0);
 	count1=count1+2;
 	if(count1>-300){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
-	image(right,0,count2);
+	image(right,count2,0);
 	count2=count2+2;
 	if(count2>300){
 	count2=0;
