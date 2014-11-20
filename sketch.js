@@ -32,15 +32,15 @@ function draw() {
 
 	//발왼쪽 이동
 	image(left,count1,0);
-	count1=count1+50;
-	if(count1>-1500){
+	count1=count1+30;
+	if(count1>-2000){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
 	image(right,count2,0);
-	count2=count2+50;
-	if(count2>1500){
+	count2=count2+30;
+	if(count2>2000){
 	count2=0;
 	} 
 
