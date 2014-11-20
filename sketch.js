@@ -29,13 +29,7 @@ function draw() {
 	background(bg);
 	noCursor();
 
-	var duration1 = 50000;
-	var timing1 = (new Date()%duration1)/duration1;
-	var duration2 = 50000;
-	var timing2 = (new Date()%duration2)/duration2;
-	var duration3 = 50000;
-	var timing3 = (new Date()%duration3)/duration3;
-
+	var t=(new Date()%5000)/5000;
 
 	//발왼쪽 이동
 	image(left,count1,0);
