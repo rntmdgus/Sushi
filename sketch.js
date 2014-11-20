@@ -77,6 +77,11 @@ function draw() {
 	count2=0;
 	} 
 
+	for(var i = 0 ; i <4 ; i++){
+		if(50*sin(t*2*PI+PI/6*i)<0){
+				image(dishImg[i],dishX[i]-smallSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
+			}
+		}
 
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)<0){
@@ -87,11 +92,7 @@ function draw() {
 		}
 	}
 
-	for(var i = 0 ; i <4 ; i++){
-		if(50*sin(t*2*PI+PI/6*i)<0){
-				image(dishImg[i],dishX[i]-smallSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
-			}
-		}
+
 
 
 	if(countCat < 50){
@@ -106,6 +107,11 @@ function draw() {
 	countCat++;
 
 
+	for(var i = 0 ; i <4 ; i++){
+		if(50*sin(t*2*PI+PI/6*i)>=0){
+				image(dishiImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
+		}
+	}
 
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)>=0){
@@ -115,11 +121,7 @@ function draw() {
 		}
 	}
 
-	for(var i = 0 ; i <4 ; i++){
-		if(50*sin(t*2*PI+PI/6*i)>=0){
-				image(dishiImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
-		}
-	}
+
 
 	//위라인
 	noFill();
