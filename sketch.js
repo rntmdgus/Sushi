@@ -4,10 +4,17 @@ var bigSizeW=462;
 var bigSizeH=268;
 var smallSizeW=272;
 var smallSizeH=158;
+var bigSizeW1=850;
+var bigSizeH1=340;
+var smallSizeW1=500;
+var smallSizeH1=200;
 var sushiX=[];
 var sushiY=[];
+var dishX=[];
+var dishX=[];
 var checkPick=[];
 var sushiImg=[];
+var dishImg=[];
 var sushiCount=[];
 
 function setup() {
@@ -26,6 +33,12 @@ function setup() {
     dishy = loadImage("dishy.png");
     dishr = loadImage("dishr.png");
     dishb = loadImage("dishb.png");
+
+    dishImg[0]=loadImage("dishw.png");
+    dishImg[1]=loadImage("dishy.png");
+    dishImg[2]=loadImage("dishr.png");
+    dishImg[3]=loadImage("dishb.png");
+
     left = loadImage("left.png");
     right = loadImage("right.png");
     cat1 = loadImage("cat1.png");
@@ -52,6 +65,12 @@ function draw() {
 		sushiX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
 		sushiY[i]=730+150*sin(t*2*PI+PI/6*i);
 	}
+
+	for(var i = 0 ; i < 4 ; i++){
+		dishX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
+		dishY[i]=730+150*sin(t*2*PI+PI/6*i);
+	}
+
 	//발왼쪽 이동
 	image(left,count1,0);
 	count1=count1-20;
@@ -76,7 +95,11 @@ function draw() {
 		}
 	}
 
-
+	for(var i = 0 ; i <4 ; i++){
+		if(50*sin(t*2*PI+PI/6*i)<0){
+				image(dishImg[i],dishX[i]-dishSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
+			}
+		}
 
 
 	if(countCat < 50){
@@ -100,6 +123,11 @@ function draw() {
 		}
 	}
 
+	for(var i = 0 ; i <4 ; i++){
+		if(50*sin(t*2*PI+PI/6*i)>=0){
+				image(dishiImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
+		}
+	}
 
 	//위라인
 	noFill();
@@ -113,7 +141,7 @@ function draw() {
 	for(var i = 0 ; i < 4 ; i++){
 		if(checkPick[i]){
 			sushiCount[i]+=5;
-			if(sushiCount[i] > 100){
+			if(sushiCount[i] > 300){
 				sushiCount[i] = 0;
 				checkPick[i] = false;
 			}
