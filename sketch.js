@@ -13,7 +13,7 @@ function setup() {
     cat1 = loadImage("cat1.png");
     cat2 = loadImage("cat2.png");
 
-	count1 = 0;
+	count1 = -2000;
 	count2 = 0;
 }
 
@@ -33,7 +33,7 @@ function draw() {
 	//발왼쪽 이동
 	image(left,count1,0);
 	count1=count1+30;
-	if(count1>-2000){
+	if(count1>0){
 	count1=0;
 	} 
 
