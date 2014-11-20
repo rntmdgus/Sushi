@@ -76,16 +76,16 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)>=0){
-		image(sushi1,1000+cos(t*2*PI)*1050,580+150*sin(t*2*PI),472,358);
+		image(sushi1,1000+cos(t*2*PI)*1050,580+150*sin(t*2*PI),462,268);
 	}
 	if(50*sin(t*2*PI+PI/6)>=0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,580+150*sin(t*2*PI+PI/6),472,358);
+		image(sushi2,1000+cos(t*2*PI+PI/6)*1050,580+150*sin(t*2*PI+PI/6),462,268);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,580+150*sin(t*2*PI+PI/3),472,358);	
+		image(sushi3,1000+cos(t*2*PI+PI/3)*1050,580+150*sin(t*2*PI+PI/3),462,268);	
 	}
 	if(50*sin(t*2*PI+PI/2)>=0){
-		image(sushi4,1000+cos(t*2*PI+PI/2)*1050,580+150*sin(t*2*PI+PI/2),472,358);
+		image(sushi4,1000+cos(t*2*PI+PI/2)*1050,580+150*sin(t*2*PI+PI/2),462,268);
 		
 	}
 
