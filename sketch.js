@@ -11,7 +11,7 @@ var smallSizeH1=200;
 var sushiX=[];
 var sushiY=[];
 var dishX=[];
-var dishX=[];
+var dishY=[];
 var checkPick=[];
 var sushiImg=[];
 var dishImg=[];
@@ -23,22 +23,14 @@ function setup() {
 
     bg = loadImage("bg.png");
     chopsticks = loadImage("chopsticks.png");
-   
     sushiImg[0]= loadImage("sushi1.png");
 	sushiImg[1]= loadImage("sushi2.png");
 	sushiImg[2]= loadImage("sushi3.png");
 	sushiImg[3]= loadImage("sushi4.png");
-
-    dishw = loadImage("dishw.png");
-    dishy = loadImage("dishy.png");
-    dishr = loadImage("dishr.png");
-    dishb = loadImage("dishb.png");
-
     dishImg[0]=loadImage("dishw.png");
     dishImg[1]=loadImage("dishy.png");
     dishImg[2]=loadImage("dishr.png");
     dishImg[3]=loadImage("dishb.png");
-
     left = loadImage("left.png");
     right = loadImage("right.png");
     cat1 = loadImage("cat1.png");
@@ -97,7 +89,7 @@ function draw() {
 
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)<0){
-				image(dishImg[i],dishX[i]-dishSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
+				image(dishImg[i],dishX[i]-smallSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
 			}
 		}
 
