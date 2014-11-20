@@ -109,7 +109,7 @@ function draw() {
 
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)>=0){
-				image(dishiImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
+				image(dishImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
 		}
 	}
 
