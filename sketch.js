@@ -29,7 +29,7 @@ function draw() {
 	background(bg);
 	noCursor();
 
-	var t=(new Date()%30000)/30000;
+	var t=(new Date()%20000)/20000;
 
 	//발왼쪽 이동
 	image(left,count1,0);
@@ -52,11 +52,10 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)<0){
-		//위
-		image(sushi1,1000+cos(t*2*PI)*1000,600+150*sin(t*2*PI),272,158);
+		image(sushi1,800+cos(t*2*PI)*1200,600+150*sin(t*2*PI),272,158);
 	}
 	if(50*sin(t*2*PI+PI/3)<0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1000,600+150*sin(t*2*PI+PI/3),272,158);
+		image(sushi2,800+cos(t*2*PI+PI/6)*1200,600+150*sin(t*2*PI+PI/3),272,158);
 		
 	}
 
@@ -75,11 +74,10 @@ function draw() {
 
 
 	if(50*sin(t*2*PI)>=0){
-		//위
-		image(sushi1,1000+cos(t*2*PI)*1000,600+150*sin(t*2*PI),372,158);
+		image(sushi1,800+cos(t*2*PI)*1200,600+150*sin(t*2*PI),372,158);
 	}
 	if(50*sin(t*2*PI+PI/3)>=0){
-		image(sushi2,1000+cos(t*2*PI+PI/6)*1000,600+150*sin(t*2*PI+PI/3),372,158);
+		image(sushi2,800+cos(t*2*PI+PI/6)*1200,600+150*sin(t*2*PI+PI/3),372,158);
 		
 	}
 
