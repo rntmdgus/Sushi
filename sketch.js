@@ -7,17 +7,19 @@ var smallSizeH=158;
 var sushiX=[];
 var sushiY=[];
 var checkPick=[];
-
+var sushiImg=[];
 function setup() {
 
     createCanvas(2000, 1000);
 
     bg = loadImage("bg.png");
     chopsticks = loadImage("chopsticks.png");
-    sushi1 = loadImage("sushi1.png");
-    sushi2 = loadImage("sushi2.png");
-    sushi3 = loadImage("sushi3.png");
-    sushi4 = loadImage("sushi4.png");
+   
+    sushiImg[0]= loadImage("sushi1.png");
+	sushiImg[1]= loadImage("sushi2.png");
+	sushiImg[2]= loadImage("sushi3.png");
+	sushiImg[3]= loadImage("sushi4.png");
+
     dishw = loadImage("dishw.png");
     dishy = loadImage("dishy.png");
     dishr = loadImage("dishr.png");
@@ -65,7 +67,7 @@ function draw() {
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)<0){
 			if(!checkPick[i]){
-				image(sushi1,sushiX[i]-smallSizeW/2,sushiY[i]-smallSizeH/2,smallSizeW,smallSizeH);
+				image(sushiImg[i],sushiX[i]-smallSizeW/2,sushiY[i]-smallSizeH/2,smallSizeW,smallSizeH);
 			}
 		}
 	}
@@ -89,7 +91,7 @@ function draw() {
 	for(var i = 0 ; i <4 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)>=0){
 			if(!checkPick[i]){
-				image(sushi1,sushiX[i]-bigSizeW/2,sushiY[i]-bigSizeH/2,bigSizeW,bigSizeH);
+				image(sushiImg[i],sushiX[i]-bigSizeW/2,sushiY[i]-bigSizeH/2,bigSizeW,bigSizeH);
 			}
 		}
 	}
