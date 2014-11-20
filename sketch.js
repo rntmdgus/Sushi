@@ -45,10 +45,7 @@ function draw() {
 	count2=0;
 	} 
 
-	//위라인
-	noFill();
-	stroke(255);
-	ellipse(1000,1300,4000,1500);
+
 
 
 	if(50*sin(t*2*PI)<0){
@@ -81,11 +78,11 @@ function draw() {
 		
 	}
 
-
-	//아래라인
+	//위라인
 	noFill();
 	stroke(255);
-	ellipse(1000,120,4500,1500);
+	ellipse(1000,1300,500,1500);
+
 
 	//젓가락
 	image(chopsticks,mouseX,mouseY,500,500);
