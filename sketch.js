@@ -73,14 +73,14 @@ function draw() {
 
 	//발왼쪽 이동
 	image(left,count1,0);
-	count1=count1-20;
+	count1=count1-25;
 	if(count1<-2000){
 	count1=0;
 	} 
 
 	//발오른쪽 이동
 	image(right,count2,0);
-	count2=count2+20;
+	count2=count2+25;
 	if(count2>2000){
 	count2=0;
 	} 
