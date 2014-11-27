@@ -1,4 +1,4 @@
-var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, sushi2, sushi3, sushi4, dishw, dishy, dishr, dishb;
+var bg, chopsticks, left, right, count1, count2, cat1, cat2, sushi1, sushi2, sushi3, sushi4, sushi5, sushi6, sushi7, sushi8, dishw, dishy, dishr, dishb;
 var countCat;
 var bigSizeW=462;
 var bigSizeH=268;
@@ -27,10 +27,18 @@ function setup() {
 	sushiImg[1]= loadImage("sushi2.png");
 	sushiImg[2]= loadImage("sushi3.png");
 	sushiImg[3]= loadImage("sushi4.png");
-    dishImg[0]=loadImage("dishw.png");
+	sushiImg[4]= loadImage("sushi5.png");
+	sushiImg[5]= loadImage("sushi6.png");
+	sushiImg[6]= loadImage("sushi7.png");
+	sushiImg[7]= loadImage("sushi8.png");
+    dishImg[0]=loadImage("dishr.png");
     dishImg[1]=loadImage("dishy.png");
-    dishImg[2]=loadImage("dishr.png");
-    dishImg[3]=loadImage("dishb.png");
+    dishImg[2]=loadImage("dishb.png");
+    dishImg[3]=loadImage("dishw.png");
+    dishImg[4]=loadImage("dishr.png");
+    dishImg[5]=loadImage("dishy.png");
+    dishImg[6]=loadImage("dishw.png");
+    dishImg[7]=loadImage("dishb.png");
     left = loadImage("left.png");
     right = loadImage("right.png");
     cat1 = loadImage("cat1.png");
@@ -39,7 +47,7 @@ function setup() {
 	count1 = 0;
 	count2 = 0;
 	countCat =0;
-	for(var i = 0 ; i <4 ; i++){
+	for(var i = 0 ; i <8 ; i++){
 		checkPick[i]=false;
 		sushiCount[i]=0;
 	}
@@ -53,12 +61,12 @@ function draw() {
 	var t=(new Date()%20000)/20000;
 
 
-	for(var i = 0 ; i < 4 ; i++){
+	for(var i = 0 ; i < 8 ; i++){
 		sushiX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
 		sushiY[i]=730+150*sin(t*2*PI+PI/6*i);
 	}
 
-	for(var i = 0 ; i < 4 ; i++){
+	for(var i = 0 ; i < 8 ; i++){
 		dishX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
 		dishY[i]=730+150*sin(t*2*PI+PI/6*i);
 	}
@@ -77,13 +85,13 @@ function draw() {
 	count2=0;
 	} 
 
-	for(var i = 0 ; i <4 ; i++){
+	for(var i = 0 ; i <8 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)<0){
 				image(dishImg[i],dishX[i]-smallSizeW1/2,dishY[i]-smallSizeH1/2,smallSizeW1,smallSizeH1);
 			}
 		}
 
-	for(var i = 0 ; i <4 ; i++){
+	for(var i = 0 ; i <8 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)<0){
 			if(!checkPick[i]){
 				image(sushiImg[i],sushiX[i]-smallSizeW/2,sushiY[i]-smallSizeH/2,smallSizeW,smallSizeH);
@@ -107,13 +115,13 @@ function draw() {
 	countCat++;
 
 
-	for(var i = 0 ; i <4 ; i++){
+	for(var i = 0 ; i <8 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)>=0){
 				image(dishImg[i],dishX[i]-bigSizeW1/2,dishY[i]-bigSizeH1/2,bigSizeW1,bigSizeH1);
 		}
 	}
 
-	for(var i = 0 ; i <4 ; i++){
+	for(var i = 0 ; i <8 ; i++){
 		if(50*sin(t*2*PI+PI/6*i)>=0){
 			if(!checkPick[i]){
 				image(sushiImg[i],sushiX[i]-bigSizeW/2,sushiY[i]-bigSizeH/2,bigSizeW,bigSizeH);
@@ -132,7 +140,7 @@ function draw() {
 	//젓가락
 	image(chopsticks,mouseX-250,mouseY-20,500,500);
 
-	for(var i = 0 ; i < 4 ; i++){
+	for(var i = 0 ; i < 8 ; i++){
 		if(checkPick[i]){
 			sushiCount[i]+=5;
 			if(sushiCount[i] > 300){
@@ -148,7 +156,7 @@ function dist(x1,y1,x2,y2){
 }
 
 function mouseClicked(){
-	for(var i =0 ; i <4 ;i++){
+	for(var i =0 ; i <8 ;i++){
 		if(dist(sushiX[i],sushiY[i],mouseX,mouseY)<60){
 			checkPick[i]=true;
 		}
