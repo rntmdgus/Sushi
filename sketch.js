@@ -62,12 +62,12 @@ function draw() {
 
 
 	for(var i = 0 ; i < 8 ; i++){
-		sushiX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
+		sushiX[i]=1000+cos(t*2*PI+PI/6*i)*1400;
 		sushiY[i]=730+150*sin(t*2*PI+PI/6*i);
 	}
 
 	for(var i = 0 ; i < 8 ; i++){
-		dishX[i]=1000+cos(t*2*PI+PI/6*i)*1200;
+		dishX[i]=1000+cos(t*2*PI+PI/6*i)*1400;
 		dishY[i]=730+150*sin(t*2*PI+PI/6*i);
 	}
 
